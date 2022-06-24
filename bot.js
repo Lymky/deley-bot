@@ -25,11 +25,7 @@ client.on('message', (message) => {
 
         
         const timeTaken = Date.now() - message.createdTimestamp;
-        const embed = new Discord.MessageEmbed()
-        .setDescription("AAA")
-
-        message.reply(embed)
-        /* message.reply(`> :ping_pong: **Pong! A latência é de: ${timeTaken}ms.**`); */
+        message.reply(`> :ping_pong: **Pong! A latência é de: ${timeTaken}ms.**`); 
       }
     
     if(command === "avatar") {

@@ -3,7 +3,7 @@ const config = require("./config.json"),
     token = config.token;   
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 let prefix = config.prefix,
-    dono = config.dono; // prereferência: https://github.com/DMVMarcio/discordbot-js/blob/master/index.js;
+    dono = config.dono; // referência: https://github.com/DMVMarcio/discordbot-js/blob/master/index.js;
 
 client.on('ready', () => {
    console.log("Iniciando...")
@@ -32,7 +32,7 @@ client.on('message', (message) => {
         let avatar = message.author.avatarURL({ dynamic: true, format: "png", size: 1024 });
         message.reply(avatar)
     }  
-    
+
 
     });
 

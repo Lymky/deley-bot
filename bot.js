@@ -3,14 +3,14 @@ const config = require("./config.json"),
     token = config.token;   
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
 let prefix = config.prefix,
-    dono = config.dono; // referência: https://github.com/DMVMarcio/discordbot-js/blob/master/index.js;
+    dono = config.dono; 
 
 client.on('ready', () => {
    console.log("Iniciando...")
 });
 
 
-// referência: https://www.digitalocean.com/community/tutorials/how-to-build-a-discord-bot-with-node-js-pt
+
 client.on('message', (message) => {
     
     if (message.channel.type == "dm") return;

@@ -23,13 +23,9 @@ client.on('message', (message) => {
 
     if(command === "ping"){
 
+        
         const timeTaken = Date.now() - message.createdTimestamp;
-        const embed = new Discord.MessageEmbed()
-        .setColor("BLURPLE")
-        .setDescription(`⚔ | Hasagii, a Latencia e de ${timeTaken}ms.`)
-
-        message.reply(embed)
-        /* message.reply(`> :ping_pong: **Pong! A latência é de: ${timeTaken}ms.**`); */
+        message.reply(`> :ping_pong: **Pong! A latência é de: ${timeTaken}ms.**`); 
       }
     
     if(command === "avatar") {

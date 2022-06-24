@@ -26,7 +26,7 @@ client.on('message', (message) => {
         const timeTaken = Date.now() - message.createdTimestamp;
         const embed = new Discord.MessageEmbed()
         .setColor("BLURPLE")
-        .setDescription("⚔ | Hasagii, a Latencia e de ${timeTaken}ms.")
+        .setDescription(`⚔ | Hasagii, a Latencia e de ${timeTaken}ms.`)
 
         message.reply(embed)
         /* message.reply(`> :ping_pong: **Pong! A latência é de: ${timeTaken}ms.**`); */
